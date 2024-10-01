@@ -56,7 +56,7 @@ The app interacts with two endpoints:
 The app dynamically changes the weather icons based on the forecast received from the API. A switch statement maps AccuWeather's weather codes to corresponding icons stored in the assets/images folder.
 
 3. **Saving Zip Codes**:
-The app uses localStorage to save multiple zip codes locally. This ensures that users can access previously searched zip codes even after refreshing the browser. The list of saved zip codes is interactive—users can select a zip code to load the forecast for that location or delete the zip code from the saved list.
+The app uses localStorage to save multiple zip codes locally. This ensures that users can access previously searched zip codes even after refreshing the browser. The list of saved zip codes is interactive. Users can select a zip code to load the forecast for that location or delete the zip code from the saved list.
 
 4. **Error Handling**:
 Error handling is implemented to ensure smooth user experience. If the user enters an invalid zip code, they are alerted with a message to provide a valid zip code.
