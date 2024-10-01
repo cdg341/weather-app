@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <section class="weather-app">
+    <div class="preloader">
+      <img src="assets/preloader.gif" alt="">
+      <p>Loading</p>
+    </div>
+    <!-- Search -->
+    <div class="search">
+      <input class="search-input" type="text" placeholder="Enter Zipcode">
+      <button><img src="assets/images/search.png" alt=""></button>
+    </div>
+
+    <!-- Save Zipcode -->
+    <div class="save-zipcode">
+      <button id="save-zipcode-button">Save Zipcode</button>
+    </div>
+
+    <!-- Saved Zipcodes -->
+    <div class="saved-zipcodes">
+      <h3>Saved Zipcodes</h3>
+      <ul id="zipcode-list"></ul>
+    </div>
+
+    <!-- Weather Section -->
+    <div class="weather">
+      <img src="assets/images/clear.png" class="weather-icon" alt="Weather Icon">
+      <h2 class="phrase"></h2>
+
+      <!-- Temperatures-->
+      <div class="temperatures">
+        <div class="high">
+          <h1 class="high-temp"></h1>
+          <span>High</span>
+        </div>
+        <div class="low">
+          <h1 class="low-temp"></h1>
+          <span>Low</span>
+        </div>
+      </div>
+
+      <!-- City -->
+      <h2 class="city"></h2>
+
+      <!-- Details -->
+      <div class="details">
+        <div class="left-side">
+          <img src="assets/images/rain.png" alt="Rain">
+          <div>
+            <p class="chance-of-rain"></p>
+            <p>Chance of Rain</p>
+          </div>
+        </div>
+        <div class="right-side">
+          <img src="assets/images/wind.png" alt="Wind">
+          <div>
+            <p class="wind"></p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

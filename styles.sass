@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap')
+  
+*
+  margin: 0
+  padding: 0
+  
+html
+  font-size: 10px
+  box-sizing: border-box
+
+body
+  font-size: 1.8rem
+  background: linear-gradient(142deg, #2f3c4e, #5591e3)
+  height: 100vh
+  font-family: "Nunito", sans-serif
+
+=fb($align, $justify)
+  display: flex
+  align-items: $align
+  justify-content: $justify
+
+.preloader 
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: #3e6292
+  justify-content: center
+  align-items: center
+  z-index: 999
+  transition: all 0.3s linear
+  display: none
+  border-radius: 2rem
+  p
+    font-size: 4rem
+    color: #FFF
+  &.show
+    display: flex
+    gap: 2rem
+
+.weather-app
+  max-width: 65rem
+  background-color: rgba(38,13,13,.35)
+  backdrop-filter: blur(200px)
+  color: #fff
+  margin: 0 auto
+  border-radius: 2rem
+  padding: 4rem 3.5rem
+  text-align: center
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25)
+  .search
+    width: 100%
+    +fb(center, space-between)
+    .search-input
+      border: 0
+      outline: 0
+      background: #ebfffc
+      color: #555
+      padding: 1rem 2.5rem
+      height: 6rem
+      border-radius: 4rem
+      flex: 1
+      margin-right: 1.6rem
+      font-size: 1.8rem
+    button
+      border: 0
+      outline: 0
+      background:#ebfffc
+      border-radius: 50%
+      width: 6rem
+      height: 6rem
+      cursor: pointer
+      transition: .3s ease-in-out
+      &:hover
+        background-color: #ededed
+      img
+        width: 1.6rem
+  .save-zipcode
+    margin: 2rem 0
+    button
+      background-color: #ebfffc
+      border: 0
+      outline: 0
+      padding: 1rem 3rem
+      font-size: 1.6rem
+      border-radius: 2rem
+      cursor: pointer
+  .saved-zipcodes
+    #zipcode-list
+      li
+        list-style: none
+        cursor: pointer
+        button
+          margin: 1rem auto
+          background-color: transparent
+          color: #FFFFFF
+          border: 0
+          outline: 0
+          font-size: 1.6rem
+          border-radius: 2rem
+          cursor: pointer
+          margin-left: 2rem
+  .weather
+    .weather-icon
+      width: 17rem
+      margin-top: 3rem
+    .phrase
+      margin-top: 0
+      margin-bottom: 3rem
+      font-size: 3rem
+    .temperatures
+      +fb(center, space-evenly)
+      h1
+        font-size: 8rem
+        font-weight: 500
+        line-height: 1
+      span
+        font-size: 2.5rem
+        opacity: 0
+        &.show
+          opacity: 1
+    h2
+      font-size: 4.5rem
+      font-weight: 400
+      margin-top: 3rem
+    .details
+      +fb(center, space-between)
+      padding: 0 2rem
+      margin-top: 5rem
+      .left-side,.right-side
+        +fb(center, center)
+        text-align: left
+      .left-side
+        img
+          width: 6rem
+          margin-right: 1rem
+      .right-side
+        img
+          width: 4rem
+          margin-right: 1rem
+        .humidity, .wind
+          font-size: 2.8rem
+          margin-top: -.6rem
