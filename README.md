@@ -40,7 +40,7 @@ git clone https://github.com/your-username/weather-app.git
 Once you have your API key, follow these steps to integrate it into the project:
 
 1. Open script.js.
-2. Replace the placeholder API key (const apiKey = 'YOUR_API_KEY_HERE';) with your actual AccuWeather API key.
+2. Replace the placeholder API key (const apiKey = 'YOUR_API_KEY_HERE' with your actual AccuWeather API key.
 
 ### Step 4: Host the App
 To run the app, open your local development server (such as Live Server for VS Code), right-click the index.html and select "Open with Live Server."
